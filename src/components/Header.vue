@@ -14,8 +14,8 @@
           <router-link class="nav-link px-2 link-dark" to="/">Home</router-link>
         </li>
         <li>
-          <router-link class="nav-link px-2 link-warning" to="/sessions"
-            >Sessions(Shop)</router-link
+          <router-link class="nav-link px-2 link-dark" to="/sessions"
+            >Sessions</router-link
           >
         </li>
         <li>
