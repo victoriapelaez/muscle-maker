@@ -1,8 +1,31 @@
 <template>
   <div class="container" id="nav">
-    <img alt="Muscle maker logo" src="../assets/logo-muscle-100.png" />
-    <router-link to="/">Home</router-link>
-    <router-link to="/about">About</router-link>
+    <header
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
+    >
+      <a
+        href="/"
+        class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
+      >
+        <img alt="Muscle maker logo" src="../assets/logo-muscle-100.png" />
+      </a>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li>
+          <router-link class="nav-link px-2 link-dark" to="/">Home</router-link>
+        </li>
+        <li>
+          <router-link class="nav-link px-2 link-dark" to="/about"
+            >About</router-link
+          >
+        </li>
+      </ul>
+      <div class="col-md-3 text-end">
+        <button class="btn btn-outline-success me-2" type="button">
+          Login
+        </button>
+        <button class="btn btn-warning" type="button">Sign-up</button>
+      </div>
+    </header>
   </div>
 </template>
 
@@ -14,31 +37,4 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+<style scoped lang="scss"></style>
