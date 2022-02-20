@@ -10,9 +10,7 @@
       <p class="card-text">{{ session.price }} €</p>
       <div class="d-flex justify-content-between align-items-center">
         <div class="btn-group">
-          <button class="btn btn-sm btn-outline-success" type="button">
-            Reservar
-          </button>
+          <button class="btn btn-sm btn-warning" type="button">Reservar</button>
           <button class="btn btn-sm btn-outline-success" type="button">
             Comprar
           </button>
