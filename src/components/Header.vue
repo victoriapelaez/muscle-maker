@@ -26,7 +26,7 @@
           >
         </li>
       </ul>
-      <div class="col-md-3 text-end">
+      <div class="col-md-4 text-end">
         <button class="btn btn-outline-success me-2" type="button">
           Login
         </button>
