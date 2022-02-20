@@ -11,16 +11,18 @@
       </a>
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li>
-          <router-link class="nav-link px-2 link-dark" to="/">Home</router-link>
+          <router-link class="nav-link px-2 link-dark" to="/"
+            >Inicio</router-link
+          >
         </li>
         <li>
           <router-link class="nav-link px-2 link-dark" to="/sessions"
-            >Sessions</router-link
+            >Sesiones</router-link
           >
         </li>
         <li>
           <router-link class="nav-link px-2 link-dark" to="/about"
-            >About</router-link
+            >Nosotros</router-link
           >
         </li>
       </ul>
@@ -28,7 +30,7 @@
         <button class="btn btn-outline-success me-2" type="button">
           Login
         </button>
-        <button class="btn btn-warning" type="button">Sign-up</button>
+        <button class="btn btn-warning" type="button">Registrarse</button>
       </div>
     </header>
   </div>
