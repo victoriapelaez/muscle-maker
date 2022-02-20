@@ -32,6 +32,7 @@
         </div>
       </div>
     </section>
+
     <div class="second-section border-bottom">
       <h2>Carousel</h2>
       <p>Qué hacemos, servicios que se ofrecemos</p>
@@ -47,11 +48,15 @@
       <h2>Galería de imágenes del local, entrenamientos, etc.</h2>
       <p>Esta sección no me convence ¿?</p>
     </div>
+
+    <Contact />
   </main>
 </template>
 
 <script>
+import Contact from "../components/Contact.vue";
 export default {
   name: "Home",
+  components: { Contact },
 };
 </script>
