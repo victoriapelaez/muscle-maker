@@ -21,10 +21,13 @@
     <h2>Galería de imágenes del local, entrenamientos, etc.</h2>
     <p>Esta sección no me convence ¿?</p>
   </div>
+  <Contact />
 </template>
 
 <script>
+import Contact from "../components/Contact.vue";
 export default {
   name: "Home",
+  components: { Contact },
 };
 </script>
