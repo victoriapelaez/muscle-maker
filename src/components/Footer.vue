@@ -8,22 +8,24 @@
             <h4 class="my-3 text-section text-success">Muscle Maker</h4>
             <p>San Francisco 4, 07013, PALMA</p>
             <p>+ 34 456 890 256</p>
-            <p>contact@musclemaker.com</p>
+            <p>contacto@musclemaker.com</p>
           </div>
           <!-- footer container studio hours -->
           <div
             class="card-footer col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12"
           >
-            <h4 class="my-3 ps-4 text-section text-success">Club Hours</h4>
-            <p>Mondays to Fridays: 8am-8pm</p>
-            <p>Saturdays: 10am-5pm</p>
-            <p>Sundays: 10am-12am</p>
+            <h4 class="my-3 ps-4 text-section text-success">
+              Horario del Centro
+            </h4>
+            <p>Lunes a Viernes: 8h-20h.</p>
+            <p>Sábados: 10h-17h.</p>
+            <p>Domingos: 9h-12h.</p>
           </div>
           <!-- footer container social -->
           <div
             class="card-footer col-xxl-2 col-xl-2 col-lg-4 col-md-6 col-sm-12"
           >
-            <h4 class="my-3 ps-4 text-section text-success">Social</h4>
+            <h4 class="my-3 ps-4 text-section text-success">Redes Sociales</h4>
             <ul class="footer-list">
               <li class="list-unstyled">
                 <a href="#" target="_blank" class="text-decoration-none">
@@ -61,7 +63,9 @@
           <div
             class="card-footer col-xxl-4 col-xl-4 col-lg-12 col-md-6 col-sm-12"
           >
-            <h4 class="my-3 text-section text-success">Newsletter Signup</h4>
+            <h4 class="mt-3 text-section text-success">
+              Suscríbete a las novedades
+            </h4>
             <form
               action="index.html"
               method="post"
@@ -75,19 +79,19 @@
                   class="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
-                  placeholder="Enter your email address"
+                  placeholder="Introduce tu dirección de correo"
                   onblur="javascript:if(this.value==''){this.value=this.defaultValue;}"
                   onfocus="javascript:if(this.value==this.defaultValue){this.value='';}"
                 />
               </div>
-              <button type="submit" class="btn btn-success">Submit</button>
+              <button type="submit" class="btn btn-success">Enviar</button>
             </form>
           </div>
         </div>
       </div>
     </footer>
     <div class="d-flex justify-content-center py-3 border-top">
-      <p>© 2022 Muscle Maker, Inc. All rights reserved.</p>
+      <p>© 2022 Muscle Maker. Todos los derechos reservados.</p>
     </div>
   </div>
 </template>
