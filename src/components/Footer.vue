@@ -1,7 +1,7 @@
 <template>
   <div class="footer border-bottom bg-light">
     <footer>
-      <div class="container mw-100 mt-5">
+      <div class="container mw-100 mt-5 text-center">
         <div class="row">
           <!-- footer container contact -->
           <div class="card-footer col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm">
@@ -14,7 +14,7 @@
           <div
             class="card-footer col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12"
           >
-            <h4 class="my-3 ps-4 text-section text-success">
+            <h4 class="my-3 text-section text-success">
               Horario del Centro
             </h4>
             <p>Lunes a Viernes: 8h-20h.</p>
@@ -25,8 +25,8 @@
           <div
             class="card-footer col-xxl-2 col-xl-2 col-lg-4 col-md-6 col-sm-12"
           >
-            <h4 class="my-3 ps-4 text-section text-success">Redes Sociales</h4>
-            <ul class="footer-list">
+            <h4 class="my-3 text-section text-success">Redes Sociales</h4>
+            <ul class="footer-list p-0">
               <li class="list-unstyled">
                 <a href="#" target="_blank" class="text-decoration-none">
                   <img
