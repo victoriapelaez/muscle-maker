@@ -24,4 +24,5 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
 [Enlace proyecto Netlify](https://unruffled-hodgkin-c0b498.netlify.app/)
