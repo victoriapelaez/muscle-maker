@@ -27,7 +27,7 @@
       </div>
     </section>
 
-    <div class="second-section mb-5">
+    <div class="second-section my-5">
       <!-- contenedor carrousel -->
       <div class="container mt-5 pt-5">
         <!-- contenedor barras inferiores carrousel -->
@@ -42,11 +42,7 @@
           <div class="carousel-inner">
             <!-- contenedores item-carrousel -->
             <div class="carousel-item active">
-              <img
-                src="../assets/pesas-1296.jpg"
-                class="d-block w-100 img-fluid"
-                alt="pesas"
-              />
+              <img src="../assets/pesas-1296.jpg" class="d-block w-100 img-fluid" alt="pesas" />
               <div class="carousel-caption d-none d-sm-block">
                 <h3 class="fw-bold lh-1 text-dark">ENTRENAMIENTOS PERSONALIZADOS</h3>
                 <h5 class="m-0 text-dark">Realizamos entrenamientos personalizados</h5>
@@ -60,15 +56,13 @@
               />
               <div class="carousel-caption d-none d-sm-block">
                 <h3 class="fw-bold lh-1">RUTINA DE EJERCICIOS EN CASA</h3>
-                <h5 class="m-0 text-dark">Creamos una rutina para que puedas realizar con seguridad entrenamientos en casa</h5>
+                <h5
+                  class="m-0 text-dark"
+                >Creamos una rutina para que puedas realizar con seguridad entrenamientos en casa</h5>
               </div>
             </div>
             <div class="carousel-item">
-              <img
-                src="../assets/crossfit-1296.jpg"
-                class="d-block w-100 img-fluid"
-                alt="crossfit"
-              />
+              <img src="../assets/crossfit-1296.jpg" class="d-block w-100 img-fluid" alt="crossfit" />
               <div class="carousel-caption d-none d-sm-block">
                 <h3 class="fw-bold lh-1 text-light">PROFESIONALIZACIÓN</h3>
                 <h5 class="m-0 text-ligth">Te preparamos para hacer la mejor versión de ti</h5>
@@ -120,11 +114,36 @@
       </div>
     </div>
 
-    <div class="third-section border-bottom">
-      <h2>About (Quienes somos)</h2>
-      <p>Podemos poner aquí unas cards con las personas que trabajan en el local</p>
-      <p>En la vista About ya pondremos una descripción más detallada</p>
+    <div class="third-section my-5">
+      <div class="container row m-auto">
+        <h2 class=" col-12 my-5 pb-3 text-center text-success border-bottom border-success">EQUIPO</h2>
+        <div class="card col-xl-6 col-md-12 border-0">
+          <img
+            src="../assets/entrenadora-250.jpg"
+            class="card-img-top p-1 rounded-circle m-auto"
+            alt="card-img-top"
+            style="width: 250px; height: 250px;"
+          />
+          <div class="card-body m-auto">
+            <h5 class="card-title text-center border-bottom border-warning">Maria Bernat</h5>
+            <p class="card-text text-center">Nutricionista</p>
+          </div>
+        </div>
+        <div class="card col-xl-6 col-md-12 border-0">
+          <img
+            src="../assets/entrenador-250.jpg"
+            class="card-img-top p-1 rounded-circle m-auto"
+            alt="card-img-top"
+            style="width: 250px; height: 250px;"
+          />
+          <div class="card-body m-auto">
+            <h5 class="card-title text-center border-bottom border-warning">Jaume Bestard</h5>
+            <p class="card-text text-center">Entrenador</p>
+          </div>
+        </div>
+      </div>
     </div>
+
     <div class="fourth-section border-bottom">
       <h2>Galería de imágenes del local, entrenamientos, etc.</h2>
       <p>Esta sección no me convence ¿?</p>
