@@ -2,11 +2,24 @@
   <div>
     <h4 class="d-flex justify-content-between align-items-center mb-3">
       <span class="text-primary">Sesiones reservadas</span>
-      <span class="badge bg-primary rounded-pill">$total quantity$</span>
+      <span class="badge bg-primary rounded-pill">{{
+        $store.getters.getTotalQuantity
+      }}</span>
     </h4>
     <ul class="list-group mb-3">
       <li class="list-group-item d-flex justify-content-between lh-sm">
-        <h6 class="my-0">$product name$</h6>
+        <h6 class="my-0">Session</h6>
+        <h6 class="my-0">Quantity</h6>
+        <h6 class="my-0">Total price</h6>
+      </li>
+      <li
+        v-for="session in $store.getters.getSessions"
+        v-bind:key="session"
+        class="list-group-item d-flex justify-content-between lh-sm"
+      >
+        <h6 class="my-0">
+          {{ session.name }}{{ $store.getters.getSession.sessionName }}
+        </h6>
         <div class="prod-quantity input-group">
           <button class="btn-subtract btn btn-outline-secondary btn-sm p-0">
             -
@@ -14,17 +27,18 @@
           <input
             class="form-control text-center p-0"
             type="text"
-            placeholder="$product quantity$"
+            placeholder="0"
+            v-model="$store.getters.getSession.quantity"
           />
           <button class="btn-add btn btn-outline-secondary btn-sm p-0">
             +
           </button>
         </div>
-        <span class="text-muted">$product total price$</span>
+        <span class="text-muted">{{ session.price }}</span>
       </li>
       <li class="list-group-item d-flex justify-content-between lh-sm">
         <span>Total (EUR)</span>
-        <strong>$total price$</strong>
+        <strong>{{ $store.getters.getFinalPrice }}</strong>
       </li>
     </ul>
     <form class="card p-2">
@@ -39,6 +53,12 @@
     </form>
   </div>
 </template>
+
+<script>
+export default {
+  name: "ShoppingCart",
+};
+</script>
 
 <style scoped>
 .prod-quantity {
