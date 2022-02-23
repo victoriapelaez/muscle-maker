@@ -37,6 +37,14 @@ export default {
       sessions: [
         {
           id: 1,
+          name: "Sesión gratuita",
+          price: 0,
+          period: "1 hora",
+          quantity: 1,
+          img: require("../assets/gratuita-600.png"),
+        },
+        {
+          id: 2,
           name: "Sesión individual",
           price: 40,
           period: "1 hora",
@@ -44,7 +52,7 @@ export default {
           img: require("../assets/individual-600.png"),
         },
         {
-          id: 2,
+          id: 3,
           name: "Suscripción mensual",
           price: 200,
           period: "1 mes",
@@ -52,7 +60,7 @@ export default {
           img: require("../assets/mensual-600.png"),
         },
         {
-          id: 3,
+          id: 4,
           name: "Suscripción trimestral",
           price: 500,
           period: "3 meses",
@@ -60,7 +68,7 @@ export default {
           img: require("../assets/trimestral-600.png"),
         },
         {
-          id: 4,
+          id: 5,
           name: "Suscripción semestral",
           price: 800,
           period: "6 meses",
@@ -68,7 +76,7 @@ export default {
           img: require("../assets/semestral-600.png"),
         },
         {
-          id: 5,
+          id: 6,
           name: "Suscripción anual",
           price: 1200,
           period: "1 año",
