@@ -1,7 +1,5 @@
 <template>
-  <div class="about">
-    <h1>CONÓCENOS</h1>
-  </div>
+  
   <Coachs />
   <div class="row m-auto pt-5 w-75">
     <div class="col-6 text-center">
