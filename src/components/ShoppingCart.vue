@@ -21,19 +21,30 @@
           {{ session.name }}{{ $store.getters.getSession.sessionName }}
         </h6>
         <div class="prod-quantity input-group w-25">
-          <button class="btn-subtract btn btn-outline-secondary btn-sm p-0" v-on:click="decrement(index)">
+          <button
+            class="btn-subtract btn btn-outline-secondary btn-sm p-0"
+            @click="subtractCartSession(session.id)"
+          >
             -
           </button>
           <input
-            class="form-control mx-1 text-center p-0"
+            class="form-control text-center p-0"
             type="text"
             placeholder="0"
-            v-model="$store.getters.getSession.quantity"
+            v-model="session.quantity"
           />
-          <button class="btn-add btn btn-outline-secondary btn-sm p-0" v-on:click="increment(index)">
+          <button
+            class="btn-add btn btn-outline-secondary btn-sm p-0"
+            @click="addCartSession(session.id)"
+          >
             +
           </button>
-          <button class="btn-add btn btn-outline-secondary btn-sm p-0 ms-1" v-on:click="del(index)">🗑</button>
+          <button
+            class="btn-add btn btn-outline-secondary btn-sm p-0"
+            @click="$store.commit('deleteCartSession', session.id)"
+          >
+            🗑
+          </button>
         </div>
         <span class="text-muted">{{ session.price }}</span>
       </li>

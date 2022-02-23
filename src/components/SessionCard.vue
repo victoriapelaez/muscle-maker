@@ -89,22 +89,17 @@ export default {
   methods: {
     addSession(id) {
       const [session] = this.sessions.filter((session) => session.id === id);
-      const cartSession = this.mutateCartSession(session);
-      this.$store.commit("addSession", cartSession);
+      let cartSession = this.getCartSession(id);
+      if (this.isSessionInCart(id)) {
+        cartSession.quantity++;
+        cartSession.price += session.price;
+      } else {
+        cartSession = this.mutateCartSession(session);
+        this.$store.commit("addSession", cartSession);
+      }
+
       this.$store.commit("increaseFinalPrice");
-      console.log(this.$store.state.totalQuantity);
       this.$store.commit("increaseTotalQuantity");
-      // const [session] = this.sessions.filter((session) => session.id === id);
-      // let cartSession = {};
-      // const stateSession = this.$store.state.sessions.filter(
-      //   (session) => session.id === id
-      // );
-      // if (stateSession) {
-      //   stateSession.quantity++, (stateSession.price += stateSession.price);
-      // } else {
-      //   cartSession = this.mutateCartSession(session);
-      //   this.$store.commit("addSession", cartSession);
-      // }
     },
     mutateCartSession(sessionObj) {
       let cartSession = {};
@@ -114,6 +109,22 @@ export default {
       cartSession.price = sessionObj.price;
       cartSession.totalPrice = sessionObj.quantity * sessionObj.price;
       return cartSession;
+    },
+    isSessionInCart(id) {
+      const cartSessions = this.$store.getters.getSessions.filter(
+        (session) => session.id === id
+      );
+      if (cartSessions.length !== 0) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+    getCartSession(id) {
+      const [session] = this.$store.getters.getSessions.filter(
+        (session) => session.id === id
+      );
+      return session;
     },
   },
 };

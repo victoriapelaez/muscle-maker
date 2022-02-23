@@ -39,9 +39,11 @@ export default createStore({
       state.session.totalPrice = sessionObj.quantity * sessionObj.price;
     },
     increaseFinalPrice(state) {
+      let price = 0;
       state.sessions.forEach((session) => {
-        state.finalPrice += session.price;
+        price += session.price;
       });
+      state.finalPrice = price;
     },
     increaseTotalQuantity(state) {
       let quantity = 0;
@@ -50,16 +52,20 @@ export default createStore({
       });
       state.totalQuantity = quantity;
     },
-    /* decrement(state){
-    state.quantity =state.quantity - 1
+    deleteCartSession(state, id) {
+      state.sessions = state.sessions.filter((session) => session.id !== id);
+
+      let quantity = 0;
+      state.sessions.forEach((session) => {
+        quantity += session.quantity;
+      });
+      state.totalQuantity = quantity;
+
+      state.finalPrice = 0;
+      state.sessions.forEach((session) => {
+        state.finalPrice += session.price;
+      });
     },
-    increment(state){
-      state.quantity =state.quantity + 1
-      
-    },
-    del(state){
-      state.session ={}
-    } */
   },
   actions: {},
   modules: {},
