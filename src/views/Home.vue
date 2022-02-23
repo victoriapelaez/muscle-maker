@@ -2,7 +2,7 @@
   <main>
     <section class="first-section container col-xxl-8 px-4 py-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
           <img
             class="d-block mx-lg-auto img-fluid rounded shadow-sm"
             src="../assets/hero-img-500h.jpg"
@@ -12,7 +12,7 @@
           />
         </div>
         <div class="col-lg-6">
-          <h1 class="display-5 fw-bold lh-1 mb-3">Muscle Maker</h1>
+          <h1 class="display-5 fw-bold lh-1 mb-3 text-center">Muscle Maker</h1>
           <p class="fw-bold">La preparación física que necesitas para el deporte que practicas.</p>
           <p class="lead">
             Ven a entrenar con nosotros para mejorar tus cualidades como
@@ -27,9 +27,10 @@
       </div>
     </section>
 
-    <div class="second-section my-5">
+    <div class="second-section py-4">
       <!-- contenedor carrousel -->
-      <div class="container mt-5 pt-5">
+      <div class="container m-auto">
+        <h2 class="col-12 my-5 pb-3 text-center text-success border-bottom border-success">SERVICIOS</h2>
         <!-- contenedor barras inferiores carrousel -->
         <div id="carouselWithCaptions" class="carousel slide" data-bs-ride="carousel">
           <ol class="carousel-indicators">
@@ -44,8 +45,10 @@
             <div class="carousel-item active">
               <img src="../assets/pesas-1296.jpg" class="d-block w-100 img-fluid" alt="pesas" />
               <div class="carousel-caption d-none d-sm-block">
-                <h3 class="fw-bold lh-1 text-dark">ENTRENAMIENTOS PERSONALIZADOS</h3>
-                <h5 class="m-0 text-dark">Realizamos entrenamientos personalizados</h5>
+                <h2 class="text-light bg-warning rounded">ENTRENAMIENTOS PERSONALIZADOS</h2>
+                <h5
+                  class="m-0 text-light bg-success rounded"
+                >Realizamos entrenamientos personalizados</h5>
               </div>
             </div>
             <div class="carousel-item">
@@ -55,17 +58,20 @@
                 alt="estiramientos"
               />
               <div class="carousel-caption d-none d-sm-block">
-                <h3 class="fw-bold lh-1">RUTINA DE EJERCICIOS EN CASA</h3>
-                <h5
-                  class="m-0 text-dark"
-                >Creamos una rutina para que puedas realizar con seguridad entrenamientos en casa</h5>
+                <h2 class="text-light bg-warning rounded">RUTINA DE EJERCICIOS EN CASA</h2>
+                <h5 class="m-0 text-light bg-success rounded">
+                  Creamos una rutina para que puedas realizar con seguridad
+                  entrenamientos en casa
+                </h5>
               </div>
             </div>
             <div class="carousel-item">
               <img src="../assets/crossfit-1296.jpg" class="d-block w-100 img-fluid" alt="crossfit" />
               <div class="carousel-caption d-none d-sm-block">
-                <h3 class="fw-bold lh-1 text-light">PROFESIONALIZACIÓN</h3>
-                <h5 class="m-0 text-ligth">Te preparamos para hacer la mejor versión de ti</h5>
+                <h2 class="text-light bg-warning rounded">PROFESIONALIZACIÓN</h2>
+                <h5
+                  class="m-0 text-light bg-success rounded"
+                >Te preparamos para hacer la mejor versión de ti</h5>
               </div>
             </div>
             <div class="carousel-item">
@@ -75,8 +81,8 @@
                 alt="alimentacion"
               />
               <div class="carousel-caption d-none d-sm-block">
-                <h3 class="fw-bold lh-1 text-dark">NUTRICIÓN</h3>
-                <h5 class="m-0 text-dark">Te asesoramos en nutrición</h5>
+                <h2 class="text-light bg-warning rounded">NUTRICIÓN</h2>
+                <h5 class="m-0 text-light bg-success rounded">Te asesoramos en nutrición</h5>
               </div>
             </div>
             <div class="carousel-item">
@@ -86,8 +92,10 @@
                 alt="fisioterapia"
               />
               <div class="carousel-caption d-none d-sm-block">
-                <h3 class="fw-bold lh-1 text-dark">FISIOTERAPIA</h3>
-                <h5 class="m-0 text-dark">Ponemos a tu disposición a nuestros profesionales</h5>
+                <h2 class="text-light bg-warning rounded">FISIOTERAPIA</h2>
+                <h5
+                  class="m-0 text-light bg-success rounded"
+                >Ponemos a tu disposición a nuestros profesionales</h5>
               </div>
             </div>
           </div>
@@ -98,7 +106,7 @@
             role="button"
             data-bs-slide="prev"
           >
-            <span class="carousel-control-prev-icon bg-warning rounded-circle" aria-hidden="true"></span>
+            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </a>
           <a
@@ -107,22 +115,22 @@
             role="button"
             data-bs-slide="next"
           >
-            <span class="carousel-control-next-icon bg-warning rounded-circle" aria-hidden="true"></span>
+            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </a>
         </div>
       </div>
     </div>
 
-    <div class="third-section my-5">
+    <div class="third-section py-4">
       <div class="container row m-auto">
-        <h2 class=" col-12 my-5 pb-3 text-center text-success border-bottom border-success">EQUIPO</h2>
+        <h2 class="col-12 my-5 pb-3 text-center text-success border-bottom border-success">EQUIPO</h2>
         <div class="card col-xl-6 col-md-12 border-0">
           <img
             src="../assets/entrenadora-250.jpg"
             class="card-img-top p-1 rounded-circle m-auto"
             alt="card-img-top"
-            style="width: 250px; height: 250px;"
+            style="width: 250px; height: 250px"
           />
           <div class="card-body m-auto">
             <h5 class="card-title text-center border-bottom border-warning">Maria Bernat</h5>
@@ -134,7 +142,7 @@
             src="../assets/entrenador-250.jpg"
             class="card-img-top p-1 rounded-circle m-auto"
             alt="card-img-top"
-            style="width: 250px; height: 250px;"
+            style="width: 250px; height: 250px"
           />
           <div class="card-body m-auto">
             <h5 class="card-title text-center border-bottom border-warning">Jaume Bestard</h5>
@@ -143,13 +151,35 @@
         </div>
       </div>
     </div>
-
-    <div class="fourth-section border-bottom">
-      <h2>Galería de imágenes del local, entrenamientos, etc.</h2>
-      <p>Esta sección no me convence ¿?</p>
+    <div class="fourth-section py-5">
+      <div class="container m-auto">
+        <div class="card border-0">
+          <div class="row">
+            <div class="col-lg-6 col-sm-12">
+              <img
+                src="../assets/workout-450.jpg"
+                class="img-fluid m-auto px-2"
+                alt="card-horizontal-image"
+                style="width: 540px; height: 300px;"
+              />
+            </div>
+            <div class="col-lg-6 col-sm-12 p-3">
+              <div class="card-body px-5 pt-5 text-center">
+                <h2 class="card-title fw-bold text-success border-bottom border-success">PRIMERA SESIÓN GRATUITA</h2>
+                <p class="card-text">Ven a conocernos y entrena con nosotros sin ningún compromiso.</p>
+                <p class="card-text fw-bold">¡Contacta con nosotros!</p>
+                <p class="card-text">
+                  <router-link class="nav-link link-dark btn btn-outline-danger btn-lg btn-block" to="/sessions">Quiero reservar ya</router-link>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
+    <div class="fifth-section py-3">
     <Contact />
+    </div>
   </main>
 </template>
 
