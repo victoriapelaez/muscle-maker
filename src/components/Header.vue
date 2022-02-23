@@ -9,18 +9,18 @@
       >
         <img alt="Muscle maker logo" src="../assets/logo-muscle-100.png" />
       </a>
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 list-group list-group-horizontal">
+        <li class="btn btn-outline-warning border-0">
           <router-link class="nav-link px-2 link-dark" to="/"
             >Inicio</router-link
           >
         </li>
-        <li>
+        <li class="btn btn-outline-warning border-0">
           <router-link class="nav-link px-2 link-dark" to="/sessions"
             >Sesiones</router-link
           >
         </li>
-        <li>
+        <li class="btn btn-outline-warning border-0">
           <router-link class="nav-link px-2 link-dark" to="/about"
             >Nosotros</router-link
           >

@@ -14,9 +14,7 @@
           <div
             class="card-footer col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12"
           >
-            <h4 class="my-3 text-section text-success">
-              Horario del Centro
-            </h4>
+            <h4 class="my-3 text-section text-success">Horario del Centro</h4>
             <p>Lunes a Viernes: 8h-20h.</p>
             <p>Sábados: 10h-17h.</p>
             <p>Domingos: 9h-12h.</p>
