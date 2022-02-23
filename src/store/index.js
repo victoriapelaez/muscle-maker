@@ -50,6 +50,16 @@ export default createStore({
       });
       state.totalQuantity = quantity;
     },
+    /* decrement(state){
+    state.quantity =state.quantity - 1
+    },
+    increment(state){
+      state.quantity =state.quantity + 1
+      
+    },
+    del(state){
+      state.session ={}
+    } */
   },
   actions: {},
   modules: {},
