@@ -23,7 +23,7 @@
         <div class="prod-quantity input-group w-25">
           <button
             class="btn-subtract btn btn-outline-secondary btn-sm p-0"
-            @click="subtractCartSession(session.id)"
+            @click="decreaseSession(session.id)"
           >
             -
           </button>
@@ -35,7 +35,7 @@
           />
           <button
             class="btn-add btn btn-outline-secondary btn-sm p-0"
-            @click="addCartSession(session.id)"
+            @click="increaseSession(session.id)"
           >
             +
           </button>
@@ -73,6 +73,56 @@
 <script>
 export default {
   name: "ShoppingCart",
+  methods: {
+    increaseSession(id) {
+      const sessions = this.$store.getters.getCartSessions;
+      sessions.forEach((session) => {
+        if (session.id === id) {
+          session.quantity++;
+          session.price += this.getSessionPrice(session.id);
+          this.$store.state.finalPrice += this.getSessionPrice(session.id);
+        }
+      });
+      this.$store.state.totalQuantity++;
+      this.$store.state.cartSessions = [...sessions];
+    },
+    decreaseSession(id) {
+      const sessions = this.$store.getters.getCartSessions;
+      sessions.forEach((session) => {
+        if (session.id === id && session.quantity !== 0) {
+          session.quantity--;
+          session.price -= this.getSessionPrice(session.id);
+          this.$store.state.finalPrice -= this.getSessionPrice(session.id);
+          this.$store.state.totalQuantity--;
+        }
+      });
+
+      if (this.getSessionQuantity(id, sessions) === 0) {
+        this.$store.commit("deleteCartSession", id);
+      }
+
+      this.$store.state.cartSessions = [...sessions];
+    },
+    getSessionPrice(id) {
+      let sessionBasePrice = 0;
+      if (id === 2) {
+        sessionBasePrice = 40;
+      } else if (id === 3) {
+        sessionBasePrice = 200;
+      } else if (id === 4) {
+        sessionBasePrice = 500;
+      } else if (id === 5) {
+        sessionBasePrice = 800;
+      } else if (id === 6) {
+        sessionBasePrice = 1200;
+      }
+      return sessionBasePrice;
+    },
+    getSessionQuantity(id, sessions) {
+      const [session] = sessions.filter((session) => session.id === id);
+      return session.quantity;
+    },
+  },
 };
 </script>
 
