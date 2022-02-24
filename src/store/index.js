@@ -2,23 +2,13 @@ import { createStore } from "vuex";
 
 export default createStore({
   state: {
-    sessions: [],
-    session: {
-      id: 0,
-      name: "",
-      quantity: 0,
-      price: 0,
-      totalPrice: 0,
-    },
+    cartSessions: [],
     totalQuantity: 0,
     finalPrice: 0,
   },
   getters: {
-    getSessions(state) {
-      return state.sessions;
-    },
-    getSession(state) {
-      return state.session;
+    getCartSessions(state) {
+      return state.cartSessions;
     },
     getFinalPrice(state) {
       return state.finalPrice;
@@ -29,37 +19,38 @@ export default createStore({
   },
   mutations: {
     addSession(state, session) {
-      state.sessions.push(session);
-    },
-    mutateSession(state, sessionObj) {
-      state.session.id = sessionObj.id;
-      state.session.name = sessionObj.name;
-      state.session.quantity = sessionObj.quantity;
-      state.session.price = sessionObj.price;
-      state.session.totalPrice = sessionObj.quantity * sessionObj.price;
+      state.cartSessions.push(session);
     },
     increaseFinalPrice(state) {
-      state.sessions.forEach((session) => {
-        state.finalPrice += session.price;
+      let price = 0;
+      state.cartSessions.forEach((session) => {
+        price += session.price;
       });
+      state.finalPrice = price;
     },
     increaseTotalQuantity(state) {
       let quantity = 0;
-      state.sessions.forEach((session) => {
+      state.cartSessions.forEach((session) => {
         quantity += session.quantity;
       });
       state.totalQuantity = quantity;
     },
-    /* decrement(state){
-    state.quantity =state.quantity - 1
+    deleteCartSession(state, id) {
+      state.cartSessions = state.cartSessions.filter(
+        (session) => session.id !== id
+      );
+
+      let quantity = 0;
+      state.cartSessions.forEach((session) => {
+        quantity += session.quantity;
+      });
+      state.totalQuantity = quantity;
+
+      state.finalPrice = 0;
+      state.cartSessions.forEach((session) => {
+        state.finalPrice += session.price;
+      });
     },
-    increment(state){
-      state.quantity =state.quantity + 1
-      
-    },
-    del(state){
-      state.session ={}
-    } */
   },
   actions: {},
   modules: {},

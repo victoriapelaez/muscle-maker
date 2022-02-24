@@ -13,27 +13,38 @@
         <h6 class="my-0">Total price</h6>
       </li>
       <li
-        v-for="session in $store.getters.getSessions"
+        v-for="session in $store.getters.getCartSessions"
         v-bind:key="session"
         class="list-group-item d-flex justify-content-between lh-sm"
       >
         <h6 class="my-0">
-          {{ session.name }}{{ $store.getters.getSession.sessionName }}
+          {{ session.name }}
         </h6>
         <div class="prod-quantity input-group w-25">
-          <button class="btn-subtract btn btn-outline-secondary btn-sm p-0" v-on:click="decrement(index)">
+          <button
+            class="btn-subtract btn btn-outline-secondary btn-sm p-0"
+            @click="decreaseSession(session.id)"
+          >
             -
           </button>
           <input
-            class="form-control mx-1 text-center p-0"
+            class="form-control text-center p-0"
             type="text"
             placeholder="0"
-            v-model="$store.getters.getSession.quantity"
+            v-model="session.quantity"
           />
-          <button class="btn-add btn btn-outline-secondary btn-sm p-0" v-on:click="increment(index)">
+          <button
+            class="btn-add btn btn-outline-secondary btn-sm p-0"
+            @click="increaseSession(session.id)"
+          >
             +
           </button>
-          <button class="btn-add btn btn-outline-secondary btn-sm p-0 ms-1" v-on:click="del(index)">🗑</button>
+          <button
+            class="btn-add btn btn-outline-secondary btn-sm p-0"
+            @click="$store.commit('deleteCartSession', session.id)"
+          >
+            🗑
+          </button>
         </div>
         <span class="text-muted">{{ session.price }}</span>
       </li>
@@ -62,12 +73,62 @@
 <script>
 export default {
   name: "ShoppingCart",
+  methods: {
+    increaseSession(id) {
+      const sessions = this.$store.getters.getCartSessions;
+      sessions.forEach((session) => {
+        if (session.id === id) {
+          session.quantity++;
+          session.price += this.getSessionPrice(session.id);
+          this.$store.state.finalPrice += this.getSessionPrice(session.id);
+        }
+      });
+      this.$store.state.totalQuantity++;
+      this.$store.state.cartSessions = [...sessions];
+    },
+    decreaseSession(id) {
+      const sessions = this.$store.getters.getCartSessions;
+      sessions.forEach((session) => {
+        if (session.id === id && session.quantity !== 0) {
+          session.quantity--;
+          session.price -= this.getSessionPrice(session.id);
+          this.$store.state.finalPrice -= this.getSessionPrice(session.id);
+          this.$store.state.totalQuantity--;
+        }
+      });
+
+      if (this.getSessionQuantity(id, sessions) === 0) {
+        this.$store.commit("deleteCartSession", id);
+      }
+
+      this.$store.state.cartSessions = [...sessions];
+    },
+    getSessionPrice(id) {
+      let sessionBasePrice = 0;
+      if (id === 2) {
+        sessionBasePrice = 40;
+      } else if (id === 3) {
+        sessionBasePrice = 200;
+      } else if (id === 4) {
+        sessionBasePrice = 500;
+      } else if (id === 5) {
+        sessionBasePrice = 800;
+      } else if (id === 6) {
+        sessionBasePrice = 1200;
+      }
+      return sessionBasePrice;
+    },
+    getSessionQuantity(id, sessions) {
+      const [session] = sessions.filter((session) => session.id === id);
+      return session.quantity;
+    },
+  },
 };
 </script>
 
 <style scoped>
 .prod-quantity {
-  width: 4rem;
+  width: 5rem;
 }
 .btn-subtract,
 .btn-add {
