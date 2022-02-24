@@ -13,7 +13,7 @@
           <div class="btn-group">
             <button
               class="btn btn-sm btn-warning"
-              @click="addSession(session.id)"
+              @click="addSessionToCart(session.id)"
               type="button"
             >
               Reservar
@@ -87,21 +87,22 @@ export default {
     };
   },
   methods: {
-    addSession(id) {
+    addSessionToCart(id) {
       const [session] = this.sessions.filter((session) => session.id === id);
       let cartSession = this.getCartSession(id);
+
       if (this.isSessionInCart(id)) {
         cartSession.quantity++;
         cartSession.price += session.price;
       } else {
-        cartSession = this.mutateCartSession(session);
+        cartSession = this.newCartSession(session);
         this.$store.commit("addSession", cartSession);
       }
 
       this.$store.commit("increaseFinalPrice");
       this.$store.commit("increaseTotalQuantity");
     },
-    mutateCartSession(sessionObj) {
+    newCartSession(sessionObj) {
       let cartSession = {};
       cartSession.id = sessionObj.id;
       cartSession.name = sessionObj.name;
@@ -111,7 +112,7 @@ export default {
       return cartSession;
     },
     isSessionInCart(id) {
-      const cartSessions = this.$store.getters.getSessions.filter(
+      const cartSessions = this.$store.getters.getCartSessions.filter(
         (session) => session.id === id
       );
       if (cartSessions.length !== 0) {
@@ -121,7 +122,7 @@ export default {
       }
     },
     getCartSession(id) {
-      const [session] = this.$store.getters.getSessions.filter(
+      const [session] = this.$store.getters.getCartSessions.filter(
         (session) => session.id === id
       );
       return session;

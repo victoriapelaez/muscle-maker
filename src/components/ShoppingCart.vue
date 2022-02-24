@@ -13,12 +13,12 @@
         <h6 class="my-0">Total price</h6>
       </li>
       <li
-        v-for="session in $store.getters.getSessions"
+        v-for="session in $store.getters.getCartSessions"
         v-bind:key="session"
         class="list-group-item d-flex justify-content-between lh-sm"
       >
         <h6 class="my-0">
-          {{ session.name }}{{ $store.getters.getSession.sessionName }}
+          {{ session.name }}
         </h6>
         <div class="prod-quantity input-group w-25">
           <button
@@ -78,7 +78,7 @@ export default {
 
 <style scoped>
 .prod-quantity {
-  width: 4rem;
+  width: 5rem;
 }
 .btn-subtract,
 .btn-add {
