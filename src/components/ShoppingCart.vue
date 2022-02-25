@@ -22,8 +22,16 @@
         </h6>
         <div class="prod-quantity input-group w-25">
           <button
+            v-if="session.quantity > 1"
             class="btn-subtract btn btn-outline-secondary btn-sm p-0"
             @click="decreaseSession(session.id)"
+          >
+            -
+          </button>
+          <button
+            v-if="session.quantity === 1"
+            class="btn-subtract btn btn-outline-secondary btn-sm p-0"
+            @click="$store.commit('deleteCartSession', session.id)"
           >
             -
           </button>
@@ -97,9 +105,9 @@ export default {
         }
       });
 
-      if (this.getSessionQuantity(id, sessions) === 0) {
-        this.$store.commit("deleteCartSession", id);
-      }
+      // if (this.getSessionQuantity(id, sessions) === 0) {
+      //   this.$store.commit("deleteCartSession", id);
+      // }
 
       this.$store.state.cartSessions = [...sessions];
     },
