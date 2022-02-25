@@ -1,6 +1,6 @@
 <template>
   <div class="container m-auto">
-    <h2 class="col-12 mb-5 pb-3 text-center text-success border-bottom border-success">EQUIPO</h2>
+    <h2 class="col-12 my-5 py-3 text-center text-success border-bottom border-success">EQUIPO</h2>
     <div class="row">
       <div class="card col-12 col-md-6 border-0">
         <img
