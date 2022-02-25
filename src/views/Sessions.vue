@@ -1,7 +1,7 @@
 <template>
   <main class="sessions">
-    <header class="container mb-3 align-items-center">
-      <div class="row g-5">
+    <header class="container mb-3">
+      <div class="row g-5 align-items-center">
         <div class="col-md-6 col-lg-7">
           <h1>Sesiones de entrenamiento</h1>
           <p>Elige la cuota que mejor se adapte a tus necesidades.</p>
