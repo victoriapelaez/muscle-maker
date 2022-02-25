@@ -18,8 +18,16 @@
             >
               Reservar
             </button>
-            <button class="btn btn-sm btn-outline-success" type="button">
-              Comprar
+            <button
+              class="btn btn-sm btn-outline-success"
+              @click="addSessionToCart(session.id)"
+              type="button"
+            >
+              <router-link
+                class="btn btn-sm btn-outline-success p-0 border-0"
+                to="/checkout"
+                >Comprar</router-link
+              >
             </button>
           </div>
           <small class="text-muted">{{ session.period }}</small>

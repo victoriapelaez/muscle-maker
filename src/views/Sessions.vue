@@ -1,6 +1,6 @@
 <template>
   <main class="sessions">
-    <header class="container mb-3">
+    <header class="container mb-3 align-items-center">
       <div class="row g-5">
         <div class="col-md-6 col-lg-7">
           <h1>Sesiones de entrenamiento</h1>
