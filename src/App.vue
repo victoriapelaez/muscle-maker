@@ -27,4 +27,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
+.back-to-top {
+  position: fixed;
+  bottom: 350px;
+  right: 35px;
+  display: none;
+}
 </style>
