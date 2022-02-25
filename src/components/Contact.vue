@@ -1,8 +1,10 @@
 <template>
   <div class="container mw-75">
-    <section class="mx-5">
-      <h2 class="h1-responsive font-weight-bold text-center my-4 text-success">
-        Contáctanos
+    <section>
+      <h2
+        class="mb-5 pb-3 text-center text-success border-bottom border-success"
+      >
+        CONTÁCTANOS
       </h2>
       <p class="text-center w-responsive mx-auto mb-5">
         ¿Tiene usted alguna pregunta? Por favor no dude en contactar con
@@ -73,11 +75,7 @@
               </div>
             </div>
             <div class="text-center text-md-left">
-              <a
-                class="btn btn-success mt-3"
-                onclick="document.getElementById('contact-form').submit();"
-                >Enviar</a
-              >
+              <a class="btn btn-success col-12 mt-3" onclick="#">Enviar</a>
             </div>
           </form>
         </div>

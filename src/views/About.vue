@@ -1,5 +1,4 @@
 <template>
-  
   <Coachs />
   <div class="row m-auto pt-5 w-75">
     <div class="col-6 text-center">
@@ -49,6 +48,6 @@
 import Coachs from "../components/Coachs.vue";
 export default {
   name: "About",
-  components: { Coachs }
+  components: { Coachs },
 };
 </script>

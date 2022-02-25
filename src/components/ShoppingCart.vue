@@ -64,9 +64,9 @@
       </div>
     </form>
 
-    <router-link class="nav-link px-2 link-dark" to="/checkout">
-      <button class="btn btn-large col-12 btn-primary">Comprar</button>
-    </router-link>
+    <router-link class="btn col-12 btn-primary" to="/checkout"
+      >Comprar</router-link
+    >
   </div>
 </template>
 
