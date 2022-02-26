@@ -23,17 +23,17 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/Sessions.vue"),
   },
   {
-    path:"/checkout",
+    path: "/checkout",
     name: "Checkout",
     component: () =>
-    import(/* webpackChunkName: "about" */ "../views/Checkout.vue"),
+      import(/* webpackChunkName: "about" */ "../views/Checkout.vue"),
   },
   {
-    path:"/purchase",
+    path: "/purchase",
     name: "Purchase",
     component: () =>
-    import(/* webpackChunkName: "about" */ "../views/Purchase.vue"),
-  }
+      import(/* webpackChunkName: "about" */ "../views/Purchase.vue"),
+  },
 ];
 
 const router = createRouter({
