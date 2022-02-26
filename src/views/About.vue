@@ -1,6 +1,10 @@
 <template>
   <div class="container m-auto">
-    <h2 class="col-12 my-5 py-3 text-center text-success border-bottom border-success">EQUIPO</h2>
+    <h2
+      class="col-12 my-5 py-3 text-center text-success border-bottom border-success"
+    >
+      EQUIPO
+    </h2>
     <div class="row">
       <div class="card col-12 col-md-6 border-0">
         <img
@@ -10,7 +14,9 @@
           style="width: 250px; height: 250px"
         />
         <div class="card-body m-auto">
-          <h5 class="card-title text-center border-bottom border-warning">Maria Bernat</h5>
+          <h5 class="card-title text-center border-bottom border-warning">
+            Maria Bernat
+          </h5>
           <p class="card-text text-center">Nutricionista</p>
         </div>
         <div class="text-center">
@@ -26,9 +32,9 @@
             <p>11/2013 - 11/2014</p>
           </ul>
           <h5 class="text-success py-3">FORMACIÓN ACÁDEMICA</h5>
-            <p>Master alimentación vegana</p>
-            <p>Certificado Coach ARTY</p> 
-            <p>CFPGS Nutrición</p>
+          <p>Master alimentación vegana</p>
+          <p>Certificado Coach ARTY</p>
+          <p>CFPGS Nutrición</p>
           <h5 class="text-success py-3">ÉXITOS PROFESIONALES</h5>
           <ul class="list-unstyled">
             <li>Premio Investigación IDF</li>
@@ -46,7 +52,9 @@
           style="width: 250px; height: 250px"
         />
         <div class="card-body m-auto">
-          <h5 class="card-title text-center border-bottom border-warning">Jaume Bestard</h5>
+          <h5 class="card-title text-center border-bottom border-warning">
+            Jaume Bestard
+          </h5>
           <p class="card-text text-center">Entrenador</p>
         </div>
         <div class="text-center">
@@ -62,9 +70,9 @@
             <p>05/2014 - 04/2015</p>
           </ul>
           <h5 class="text-success py-3">FORMACIÓN ACÁDEMICA</h5>
-            <p>Especialización Oficial Galistemia</p>
-            <p>Master en Liderazgo y Coaching</p>
-            <p>Licenciatura INEF</p>
+          <p>Especialización Oficial Galistemia</p>
+          <p>Master en Liderazgo y Coaching</p>
+          <p>Licenciatura INEF</p>
           <h5 class="text-success py-3">ÉXITOS PROFESIONALES</h5>
           <ul class="list-unstyled">
             <li>Premio Mejor Entrenador FiveStars</li>
