@@ -1,9 +1,13 @@
 <template>
-  <main class="sessions">
+  <main class="sessions mt-5">
     <header class="container mb-3">
-      <div class="row g-5 align-items-center">
+      <div class="row g-5">
         <div class="col-md-6 col-lg-7">
-          <h1>Sesiones de entrenamiento</h1>
+          <h1
+            class="col-12 mb-5 pb-3 text-center text-success border-bottom border-success"
+          >
+            Sesiones de entrenamiento
+          </h1>
           <p>Elige la cuota que mejor se adapte a tus necesidades.</p>
         </div>
         <aside class="col-md-6 col-lg-5 order-md-last">
