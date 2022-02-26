@@ -57,6 +57,7 @@
                 src="https://img.icons8.com/ios/30/000000/shopping-cart-loaded--v2.png"
               />
             </router-link>
+            <span class="ms-1">{{ $store.state.totalQuantity }}</span>
           </button>
         </div>
       </div>
