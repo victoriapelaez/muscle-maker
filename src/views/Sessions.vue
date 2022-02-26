@@ -8,14 +8,13 @@
         </div>
         <aside class="col-md-6 col-lg-5 order-md-last">
           <ShoppingCart />
+          <router-link class="btn col-12 btn-primary" to="/checkout">Comprar</router-link>
         </aside>
       </div>
     </header>
     <section class="album py-5">
       <div class="container">
-        <div
-          class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-3"
-        >
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-3">
           <SessionCard />
         </div>
       </div>

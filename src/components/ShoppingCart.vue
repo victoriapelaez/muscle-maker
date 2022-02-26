@@ -2,9 +2,7 @@
   <div>
     <h4 class="d-flex justify-content-between align-items-center mb-3">
       <span class="text-primary">Sesiones reservadas</span>
-      <span class="badge bg-primary rounded-pill">
-        {{ $store.getters.getTotalQuantity }}
-      </span>
+      <span class="badge bg-primary rounded-pill">{{ $store.getters.getTotalQuantity }}</span>
     </h4>
     <ul class="list-group mb-3">
       <li class="list-group-item d-flex justify-content-between lh-sm">
@@ -17,24 +15,18 @@
         v-bind:key="session"
         class="list-group-item d-flex justify-content-between lh-sm"
       >
-        <h6 class="my-0">
-          {{ session.name }}
-        </h6>
+        <h6 class="my-0">{{ session.name }}</h6>
         <div class="prod-quantity input-group w-25">
           <button
             v-if="session.quantity > 1"
             class="btn-subtract btn btn-outline-secondary btn-sm p-0"
             @click="decreaseSession(session.id)"
-          >
-            -
-          </button>
+          >-</button>
           <button
             v-if="session.quantity === 1"
             class="btn-subtract btn btn-outline-secondary btn-sm p-0"
             @click="$store.commit('deleteCartSession', session.id)"
-          >
-            -
-          </button>
+          >-</button>
           <input
             class="form-control text-center p-0"
             type="text"
@@ -44,15 +36,11 @@
           <button
             class="btn-add btn btn-outline-secondary btn-sm p-0"
             @click="increaseSession(session.id)"
-          >
-            +
-          </button>
+          >+</button>
           <button
             class="btn-add btn btn-outline-secondary btn-sm p-0"
             @click="$store.commit('deleteCartSession', session.id)"
-          >
-            🗑
-          </button>
+          >🗑</button>
         </div>
         <span class="text-muted">{{ session.price }}</span>
       </li>
@@ -63,18 +51,10 @@
     </ul>
     <form class="card p-2 mb-3">
       <div class="input-group">
-        <input
-          class="form-control"
-          type="text"
-          placeholder="Código promoción"
-        />
+        <input class="form-control" type="text" placeholder="Código promoción" />
         <button class="btn btn-secondary">Añadir</button>
       </div>
     </form>
-
-    <router-link class="btn col-12 btn-primary" to="/checkout"
-      >Comprar</router-link
-    >
   </div>
 </template>
 
