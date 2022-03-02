@@ -2,6 +2,12 @@
   <header>
     <nav class="navbar navbar-expand-xl navbar-light">
       <div class="container text-center">
+        <a
+          href="/"
+          class="col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
+        >
+          <img alt="Muscle maker logo" src="../assets/logo-muscle-100.png" />
+        </a>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo2">
           <ul class="navbar-nav me-auto mb-2 mb-xl-0">
             <li class="nav-item pe-5">
@@ -25,14 +31,40 @@
                 >Nosotros</router-link
               >
             </li>
+            <li>
+              <button class="btn btn-outline-success me-2" type="button">
+                Login
+              </button>
+            </li>
+            <li>
+              <button class="btn btn-warning me-5" type="button">
+                Registrarse
+              </button>
+            </li>
           </ul>
         </div>
-        <a
-          href="/"
-          class="col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
-        >
-          <img alt="Muscle maker logo" src="../assets/logo-muscle-100.png" />
-        </a>
+        <button class="btn me-2" type="button">
+          <router-link to="/checkout">
+            <img
+              src="https://img.icons8.com/ios/30/000000/shopping-cart-loaded--v2.png"
+              alt="shopping-cart"
+            />
+          </router-link>
+          <span class="ms-1">{{ $store.state.totalQuantity }}</span>
+        </button>
+        <!-- <div class="col-md-6">
+          <button class="btn btn-outline-success me-2" type="button">Login</button>
+          <button class="btn btn-warning me-5" type="button">Registrarse</button>
+          <button class="btn me-2" type="button">
+            <router-link to="/checkout">
+              <img
+                src="https://img.icons8.com/ios/30/000000/shopping-cart-loaded--v2.png"
+                alt="shopping-cart"
+              />
+            </router-link>
+            <span class="ms-1">{{ $store.state.totalQuantity }}</span>
+          </button>
+        </div>-->
         <button
           class="navbar-toggler"
           type="button"
@@ -44,22 +76,6 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="col-md-6">
-          <button class="btn btn-outline-success me-2" type="button">
-            Login
-          </button>
-          <button class="btn btn-warning me-5" type="button">
-            Registrarse
-          </button>
-          <button class="btn me-2" type="button">
-            <router-link to="/checkout">
-              <img
-                src="https://img.icons8.com/ios/30/000000/shopping-cart-loaded--v2.png" alt="shopping-cart"
-              />
-            </router-link>
-            <span class="ms-1">{{ $store.state.totalQuantity }}</span>
-          </button>
-        </div>
       </div>
     </nav>
   </header>
