@@ -9,6 +9,8 @@
           <img
             alt="Muscle maker logo"
             src="../assets/resources/logo-muscle-100.png"
+            width="100"
+            height="100"
           />
         </a>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo2">
