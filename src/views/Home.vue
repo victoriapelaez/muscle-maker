@@ -7,7 +7,7 @@
             class="d-block mx-lg-auto img-fluid rounded shadow-sm"
             src="../assets/resources/hero-img-500h.webp"
             alt="Hero image"
-            loading="lazy"
+            width="700"
             height="500"
           />
         </div>
@@ -77,6 +77,8 @@
                 src="../assets/resources/pesas-1296.webp"
                 class="d-block w-100 img-fluid"
                 alt="pesas"
+                width="1300"
+                height="850"
               />
               <div class="carousel-caption d-none d-sm-block">
                 <h2 class="text-light bg-warning rounded">
@@ -92,6 +94,8 @@
                 src="../assets/resources/estiramiento-1296.webp"
                 class="d-block w-100 img-fluid"
                 alt="estiramientos"
+                width="1300"
+                height="850"
               />
               <div class="carousel-caption d-none d-sm-block">
                 <h2 class="text-light bg-warning rounded">
@@ -108,6 +112,8 @@
                 src="../assets/resources/crossfit-1296.webp"
                 class="d-block w-100 img-fluid"
                 alt="crossfit"
+                width="1300"
+                height="850"
               />
               <div class="carousel-caption d-none d-sm-block">
                 <h2 class="text-light bg-warning rounded">
@@ -123,6 +129,8 @@
                 src="../assets/resources/alimentacion-1296.webp"
                 class="d-block w-100 img-fluid"
                 alt="alimentacion"
+                width="1300"
+                height="850"
               />
               <div class="carousel-caption d-none d-sm-block">
                 <h2 class="text-light bg-warning rounded">NUTRICIÓN</h2>
@@ -136,6 +144,8 @@
                 src="../assets/resources/fisioterapia-1296.webp"
                 class="d-block w-100 img-fluid"
                 alt="fisioterapia"
+                width="1300"
+                height="850"
               />
               <div class="carousel-caption d-none d-sm-block">
                 <h2 class="text-light bg-warning rounded">FISIOTERAPIA</h2>
@@ -200,6 +210,8 @@
             src="../assets/resources/workout-500h.webp"
             alt="card-horizontal-image"
             style="width: 540px; height: 300px"
+            width="540"
+            height="300"
           />
         </div>
       </div>
