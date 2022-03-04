@@ -6,7 +6,7 @@
           href="/"
           class="col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
         >
-          <img alt="Muscle maker logo" src="../assets/logo-muscle-100.png" />
+          <img alt="Muscle maker logo" src="../assets/resources/logo-muscle-100.png" />
         </a>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo2">
           <ul class="navbar-nav me-auto mb-2 mb-xl-0">

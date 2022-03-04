@@ -8,7 +8,7 @@
     <div class="row">
       <div class="card col-12 col-md-6 border-0">
         <img
-          src="../assets/entrenadora-250.jpg"
+          src="../assets/resources/entrenadora-250.webp"
           class="card-img-top p-1 rounded-circle m-auto"
           alt="card-img-top"
           style="width: 250px; height: 250px"
@@ -46,7 +46,7 @@
       </div>
       <div class="card col-12 col-md-6 border-0">
         <img
-          src="../assets/entrenador-250.jpg"
+          src="../assets/resources/entrenador-250.webp"
           class="card-img-top p-1 rounded-circle m-auto"
           alt="card-img-top"
           style="width: 250px; height: 250px"

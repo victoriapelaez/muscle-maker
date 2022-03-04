@@ -49,7 +49,7 @@ export default {
           price: 0,
           period: "1 hora",
           quantity: 1,
-          img: require("../assets/gratuita-600.png"),
+          img: require("../assets/resources/gratuita-600.webp"),
         },
         {
           id: 2,
@@ -57,7 +57,7 @@ export default {
           price: 40,
           period: "1 hora",
           quantity: 1,
-          img: require("../assets/individual-600.png"),
+          img: require("../assets/resources/individual-600.webp"),
         },
         {
           id: 3,
@@ -65,7 +65,7 @@ export default {
           price: 200,
           period: "1 mes",
           quantity: 1,
-          img: require("../assets/mensual-600.png"),
+          img: require("../assets/resources/mensual-600.webp"),
         },
         {
           id: 4,
@@ -73,7 +73,7 @@ export default {
           price: 500,
           period: "3 meses",
           quantity: 1,
-          img: require("../assets/trimestral-600.png"),
+          img: require("../assets/resources/trimestral-600.webp"),
         },
         {
           id: 5,
@@ -81,7 +81,7 @@ export default {
           price: 800,
           period: "6 meses",
           quantity: 1,
-          img: require("../assets/semestral-600.png"),
+          img: require("../assets/resources/semestral-600.webp"),
         },
         {
           id: 6,
@@ -89,7 +89,7 @@ export default {
           price: 1200,
           period: "1 año",
           quantity: 1,
-          img: require("../assets/anual-600.png"),
+          img: require("../assets/resources/anual-600.webp"),
         },
       ],
     };
