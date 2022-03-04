@@ -32,7 +32,7 @@ Kanban on GitHub Projects: [muscle-maker project](https://github.com/victoriapel
 
 [Enlace proyecto Netlify](https://unruffled-hodgkin-c0b498.netlify.app/)
 
-#### Principis de UX
+### Principis de UX
 
 - S'ha fet servir una paleta de colors amd dos colors principals primari: #008037 i secondari #f7931e. A més, s'han fet servir els colors de Bootstrap per donar enfasi a determinades parts de la web com ara bottons o enllaços.
 - S'ha evitat sobrecarregar la pàgina amb contingut irrellevant i colors estridents.
@@ -68,7 +68,7 @@ Kanban on GitHub Projects: [muscle-maker project](https://github.com/victoriapel
 - G130: Providing descriptive headings
 - G131: Providing descriptive labels
 
-#### Ampliacions
+### Ampliacions
 
 Les imatges originals es troben a `/src/assets/original-imgs` i les imatges usades a la web es troben a `/src/assets/resources`.
 
@@ -82,3 +82,7 @@ Les imatges originals es troben a `/src/assets/original-imgs` i les imatges usad
 - Si es resten elements de la cistella fent sevir el botó - (menys) quan la quantitat arriba a 1 i es torna a clicar, s'esborra aquell producte de la cistella.
 - S'ha afegit un botó que permet eliminar un determinat producte de la cistella.
 - A més del total de la compra es mostra la quantitat total de productes de la cistella.
+
+### Lighthouse performance
+
+![Lighthouse performance](/src/assets/performance.png)
