@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav class="navbar navbar-expand-xl navbar-light">
+    <nav class="navbar navbar-expand-xl navbar-light" role="navigation">
       <div class="container text-center">
         <a
           href="/"
