@@ -67,3 +67,18 @@ Kanban on GitHub Projects: [muscle-maker project](https://github.com/victoriapel
 - G126: Providing a list of links to all other Web pages
 - G130: Providing descriptive headings
 - G131: Providing descriptive labels
+
+#### Ampliacions
+
+Les imatges originals es troben a `/src/assets/original-imgs` i les imatges usades a la web es troben a `/src/assets/resources`.
+
+- S'ha creat un logo pel projecte.
+- S'han a fegit imatges als productes de la tenda.
+- S'ha afegit una icona de cistella de compra al header que a més mostra el total de productes que conté i permet navegar fins a la pàgina de checkout.
+- S'ha afegit un botó de scroll up a les pàgines per tal de millorar la experiència de l'usuari.
+- S'ha afegit un botó a les cards de la tenda que permet afegir el producte a la cistella i navegar directament a la pàgina de checkout.
+- Els productes que s'afegeixen a la cistella només afegeixen una fila a la taula, després s'augmenta la seva quantitat.
+- S'han afegit dos botons a als elements que s'afegeixen a la llista, un per augmentar la quantitat d'aquell producte i un altre per reduir la quantitat.
+- Si es resten elements de la cistella fent sevir el botó - (menys) quan la quantitat arriba a 1 i es torna a clicar, s'esborra aquell producte de la cistella.
+- S'ha afegit un botó que permet eliminar un determinat producte de la cistella.
+- A més del total de la compra es mostra la quantitat total de productes de la cistella.
