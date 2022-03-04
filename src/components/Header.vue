@@ -10,40 +10,43 @@
         </a>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo2">
           <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-            <li class="nav-item pe-5">
+            <li class="nav-item pe-xl-5">
               <router-link
                 class="nav-link px-2 link-dark text-uppercase fs-6"
                 to="/"
                 >Inicio</router-link
               >
             </li>
-            <li class="nav-item pe-5">
+            <li class="nav-item pe-xl-5">
               <router-link
                 class="nav-link px-2 link-dark text-uppercase fs-6"
                 to="/sessions"
                 >Sesiones</router-link
               >
             </li>
-            <li class="nav-item pe-5">
+            <li class="nav-item pe-xl-5">
               <router-link
                 class="nav-link px-2 link-dark text-uppercase fs-6"
                 to="/about"
                 >Nosotros</router-link
               >
             </li>
-            <li>
-              <button class="btn btn-outline-success me-2" type="button">
+            <li class="me-xl-2 my-2 my-xl-0">
+              <button
+                class="btn btn-outline-success col-3 col-xl-12"
+                type="button"
+              >
                 Login
               </button>
             </li>
-            <li>
-              <button class="btn btn-warning me-5" type="button">
+            <li class="me-xl-2">
+              <button class="btn btn-warning col-3 col-xl-12" type="button">
                 Registrarse
               </button>
             </li>
           </ul>
         </div>
-        <button class="btn me-2" type="button">
+        <button class="btn me-2 p-0" type="button">
           <router-link to="/checkout">
             <img
               src="https://img.icons8.com/ios/30/000000/shopping-cart-loaded--v2.png"
@@ -52,21 +55,8 @@
           </router-link>
           <span class="ms-1">{{ $store.state.totalQuantity }}</span>
         </button>
-        <!-- <div class="col-md-6">
-          <button class="btn btn-outline-success me-2" type="button">Login</button>
-          <button class="btn btn-warning me-5" type="button">Registrarse</button>
-          <button class="btn me-2" type="button">
-            <router-link to="/checkout">
-              <img
-                src="https://img.icons8.com/ios/30/000000/shopping-cart-loaded--v2.png"
-                alt="shopping-cart"
-              />
-            </router-link>
-            <span class="ms-1">{{ $store.state.totalQuantity }}</span>
-          </button>
-        </div>-->
         <button
-          class="navbar-toggler"
+          class="navbar-toggler border-0 p-0"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarTogglerDemo2"
