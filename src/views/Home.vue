@@ -5,7 +5,7 @@
         <div class="col-12 col-sm-12 col-md-12 col-lg-6">
           <img
             class="d-block mx-lg-auto img-fluid rounded shadow-sm"
-            src="../assets/hero-img-500h.jpg"
+            src="../assets/resources/hero-img-500h.webp"
             alt="Hero image"
             loading="lazy"
             height="500"
@@ -74,7 +74,7 @@
             <!-- contenedores item-carrousel -->
             <div class="carousel-item active">
               <img
-                src="../assets/pesas-1296.jpg"
+                src="../assets/resources/pesas-1296.webp"
                 class="d-block w-100 img-fluid"
                 alt="pesas"
               />
@@ -89,7 +89,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="../assets/estiramiento-1296.jpg"
+                src="../assets/resources/estiramiento-1296.webp"
                 class="d-block w-100 img-fluid"
                 alt="estiramientos"
               />
@@ -105,7 +105,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="../assets/crossfit-1296.jpg"
+                src="../assets/resources/crossfit-1296.webp"
                 class="d-block w-100 img-fluid"
                 alt="crossfit"
               />
@@ -120,7 +120,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="../assets/alimentacion-1296.jpg"
+                src="../assets/resources/alimentacion-1296.webp"
                 class="d-block w-100 img-fluid"
                 alt="alimentacion"
               />
@@ -133,7 +133,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="../assets/fisioterapia-1296.jpg"
+                src="../assets/resources/fisioterapia-1296.webp"
                 class="d-block w-100 img-fluid"
                 alt="fisioterapia"
               />
@@ -197,7 +197,7 @@
         <div class="col-12 col-sm-12 col-md-12 col-lg-6">
           <img
             class="d-block mx-auto img-fluid rounded shadow-sm"
-            src="../assets/workout-500h.jpg"
+            src="../assets/resources/workout-500h.webp"
             alt="card-horizontal-image"
             style="width: 540px; height: 300px"
           />
