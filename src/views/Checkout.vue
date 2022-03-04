@@ -11,7 +11,10 @@
     <div class="row">
       <div class="col-lg-5 order-lg-2 mb-4 mt-5">
         <ShoppingCart />
-        <router-link class="btn col-12 btn-primary" to="/purchase"
+        <router-link
+          class="btn col-12 btn-primary"
+          to="/purchase"
+          aria-label="Go to the purchase page"
           >Comprar</router-link
         >
       </div>

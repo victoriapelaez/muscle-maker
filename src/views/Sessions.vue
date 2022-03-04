@@ -12,7 +12,10 @@
         </div>
         <aside class="col-md-6 col-lg-5 order-md-last">
           <ShoppingCart />
-          <router-link class="btn col-12 btn-primary" to="/checkout"
+          <router-link
+            class="btn col-12 btn-primary"
+            to="/checkout"
+            aria-label="Go to the checkout page"
             >Comprar</router-link
           >
         </aside>

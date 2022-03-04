@@ -5,6 +5,7 @@
         <a
           href="/"
           class="col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
+          aria-label="Go to the home page"
         >
           <img
             alt="Muscle maker logo"
@@ -19,6 +20,7 @@
               <router-link
                 class="nav-link px-2 link-dark text-uppercase fs-6"
                 to="/"
+                aria-label="Go to the home page"
                 >Inicio</router-link
               >
             </li>
@@ -26,6 +28,7 @@
               <router-link
                 class="nav-link px-2 link-dark text-uppercase fs-6"
                 to="/sessions"
+                aria-label="Go to the sessions page"
                 >Sesiones</router-link
               >
             </li>
@@ -33,6 +36,7 @@
               <router-link
                 class="nav-link px-2 link-dark text-uppercase fs-6"
                 to="/about"
+                aria-label="Go to the about page"
                 >Nosotros</router-link
               >
             </li>
@@ -52,7 +56,7 @@
           </ul>
         </div>
         <button class="btn me-2 p-0" type="button">
-          <router-link to="/checkout">
+          <router-link to="/checkout" aria-label="Go to the checkout page">
             <img
               src="https://img.icons8.com/ios/30/000000/shopping-cart-loaded--v2.png"
               alt="shopping-cart"

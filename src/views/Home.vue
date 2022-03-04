@@ -161,6 +161,7 @@
             href="#carouselWithCaptions"
             role="button"
             data-bs-slide="prev"
+            aria-label="Show previous carousel image"
           >
             <span
               class="carousel-control-prev-icon bg-dark rounded-circle"
@@ -173,6 +174,7 @@
             href="#carouselWithCaptions"
             role="button"
             data-bs-slide="next"
+            aria-label="Show next carousel image"
           >
             <span
               class="carousel-control-next-icon bg-dark rounded-circle"
@@ -200,7 +202,10 @@
             Ven a conocernos y entrena con nosotros sin ningún compromiso.
             Aprovecha esta oportunidad única y reserva tu primera sesión.
           </p>
-          <router-link class="btn btn-outline-danger col-12" to="/sessions"
+          <router-link
+            class="btn btn-outline-danger col-12"
+            to="/sessions"
+            aria-label="Go to the sessions page"
             >Reserva ya!</router-link
           >
         </div>

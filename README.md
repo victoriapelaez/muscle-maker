@@ -35,3 +35,4 @@ Kanban on GitHub Projects: [muscle-maker project](https://github.com/victoriapel
 ### Accessibilitat
 
 - ARIA2: Identifying a required field with the aria-required property
+- ARIA8: Using aria-label for link purpose

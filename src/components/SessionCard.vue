@@ -26,6 +26,7 @@
               <router-link
                 class="btn btn-sm btn-outline-success p-0 border-0"
                 to="/checkout"
+                aria-label="Go to the checkout page"
                 >Comprar</router-link
               >
             </button>

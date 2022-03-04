@@ -26,7 +26,12 @@
             <h4 class="my-3 text-section text-success">Redes Sociales</h4>
             <ul class="footer-list p-0">
               <li class="list-unstyled">
-                <a href="#" target="_blank" class="text-decoration-none">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="text-decoration-none"
+                  aria-label="Go to the muscle maker's facebook page"
+                >
                   <img
                     src="https://img.icons8.com/color/30/000000/facebook-circled--v5.png"
                     alt="facebook"
@@ -40,6 +45,7 @@
                   href="#"
                   target="_blank"
                   class="text-muted text-decoration-none"
+                  aria-label="Go to the muscle maker's instagram account"
                 >
                   <img
                     src="https://img.icons8.com/fluency/30/000000/instagram-new.png"
@@ -54,6 +60,7 @@
                   href="#"
                   target="_blank"
                   class="text-muted text-decoration-none"
+                  aria-label="Go to the muscle maker's google account"
                 >
                   <img
                     src="https://img.icons8.com/color/30/000000/google-logo.png"
