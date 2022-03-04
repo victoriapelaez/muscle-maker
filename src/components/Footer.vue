@@ -29,6 +29,7 @@
                 <a href="#" target="_blank" class="text-decoration-none">
                   <img
                     src="https://img.icons8.com/color/30/000000/facebook-circled--v5.png"
+                    alt="facebook"
                   />
                 </a>
               </li>
@@ -40,6 +41,7 @@
                 >
                   <img
                     src="https://img.icons8.com/fluency/30/000000/instagram-new.png"
+                    alt="instagram"
                   />
                 </a>
               </li>
@@ -51,6 +53,7 @@
                 >
                   <img
                     src="https://img.icons8.com/color/30/000000/google-logo.png"
+                    alt="instagram"
                   />
                 </a>
               </li>
