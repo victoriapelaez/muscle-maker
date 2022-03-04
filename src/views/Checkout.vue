@@ -25,8 +25,8 @@
                 type="text"
                 class="form-control"
                 id="firstName"
-                placeholder
-                value
+                required
+                aria-required="true"
               />
             </div>
             <div class="col-md-6 mb-3">
@@ -35,8 +35,8 @@
                 type="text"
                 class="form-control"
                 id="lastName"
-                placeholder
-                value
+                required
+                aria-required="true"
               />
             </div>
           </div>
@@ -51,16 +51,30 @@
                 class="form-control"
                 id="username"
                 placeholder="Nombre de usuario"
+                required
+                aria-required="true"
               />
             </div>
           </div>
           <div class="mb-3">
             <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" placeholder />
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              required
+              aria-required="true"
+            />
           </div>
           <div class="mb-3">
             <label for="address">Dirección</label>
-            <input type="text" class="form-control" id="address" placeholder />
+            <input
+              type="text"
+              class="form-control"
+              id="address"
+              required
+              aria-required="true"
+            />
           </div>
           <div class="row">
             <div class="col-md-6 mb-6">
@@ -72,7 +86,13 @@
             </div>
             <div class="col-md-6 mb-6">
               <label for="zip">Código Postal</label>
-              <input type="text" class="form-control" id="zip" placeholder />
+              <input
+                type="text"
+                class="form-control"
+                id="zip"
+                required
+                aria-required="true"
+              />
             </div>
           </div>
           <hr class="mb-4" />
@@ -81,6 +101,7 @@
               type="checkbox"
               class="custom-control-input"
               id="save-info me-1"
+              aria-required="false"
             />
             <label class="custom-control-label" for="save-info"
               >Guardar información para futuras compras.</label
@@ -96,6 +117,8 @@
                 name="paymentMethod"
                 type="radio"
                 class="custom-control-input me-1"
+                required
+                aria-required="true"
               />
               <label class="custom-control-label" for="credit"
                 >Tarjeta de crédito</label
@@ -107,6 +130,8 @@
                 name="paymentMethod"
                 type="radio"
                 class="custom-control-input me-1"
+                required
+                aria-required="true"
               />
               <label class="custom-control-label" for="paypal">PayPal</label>
             </div>
@@ -118,7 +143,8 @@
                 type="text"
                 class="form-control"
                 id="cc-name"
-                placeholder
+                required
+                aria-required="true"
               />
             </div>
             <div class="col-md-6 mb-3">
@@ -127,7 +153,8 @@
                 type="text"
                 class="form-control"
                 id="cc-number"
-                placeholder
+                required
+                aria-required="true"
               />
             </div>
           </div>
@@ -138,12 +165,19 @@
                 type="text"
                 class="form-control"
                 id="cc-expiration"
-                placeholder
+                required
+                aria-required="true"
               />
             </div>
             <div class="col-md-3 mb-3">
               <label for="cc-cvv">CVV</label>
-              <input type="text" class="form-control" id="cc-cvv" placeholder />
+              <input
+                type="text"
+                class="form-control"
+                id="cc-cvv"
+                required
+                aria-required="true"
+              />
             </div>
           </div>
         </form>

@@ -28,6 +28,8 @@
                     name="name"
                     class="form-control"
                     placeholder="Nombre"
+                    required
+                    aria-required="true"
                   />
                   <label for="name" class></label>
                 </div>
@@ -40,6 +42,8 @@
                     name="email"
                     class="form-control"
                     placeholder="Email"
+                    required
+                    aria-required="true"
                   />
                   <label for="email" class></label>
                 </div>
@@ -54,6 +58,8 @@
                     name="subject"
                     class="form-control"
                     placeholder="Asunto"
+                    required
+                    aria-required="true"
                   />
                   <label for="subject" class></label>
                 </div>
@@ -69,6 +75,8 @@
                     rows="2"
                     class="form-control md-textarea"
                     placeholder="Tu mensaje"
+                    required
+                    aria-required="true"
                   ></textarea>
                   <label for="message"></label>
                 </div>

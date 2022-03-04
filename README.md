@@ -31,3 +31,7 @@ npm run lint
 Kanban on GitHub Projects: [muscle-maker project](https://github.com/victoriapelaez/muscle-maker/projects/1)
 
 [Enlace proyecto Netlify](https://unruffled-hodgkin-c0b498.netlify.app/)
+
+### Accessibilitat
+
+- ARIA2: Identifying a required field with the aria-required property

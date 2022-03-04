@@ -89,6 +89,8 @@
                   placeholder="Introduce tu dirección de correo"
                   onblur="javascript:if(this.value==''){this.value=this.defaultValue;}"
                   onfocus="javascript:if(this.value==this.defaultValue){this.value='';}"
+                  required
+                  aria-required="true"
                 />
               </div>
               <button type="submit" class="btn btn-success">Enviar</button>
