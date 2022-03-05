@@ -80,13 +80,13 @@
                 width="1300"
                 height="850"
               />
-              <div class="carousel-caption d-none d-sm-block">
-                <h2 class="text-light bg-warning rounded">
+              <div class="carousel-caption d-block">
+                <h3 class="text-light bg-warning rounded">
                   ENTRENAMIENTOS PERSONALIZADOS
-                </h2>
-                <h5 class="m-0 text-light bg-success rounded">
+                </h3>
+                <p class="m-0 px-3 text-light bg-success rounded">
                   Realizamos entrenamientos personalizados
-                </h5>
+                </p>
               </div>
             </div>
             <div class="carousel-item">
@@ -97,14 +97,12 @@
                 width="1300"
                 height="850"
               />
-              <div class="carousel-caption d-none d-sm-block">
-                <h2 class="text-light bg-warning rounded">
-                  RUTINA DE EJERCICIOS EN CASA
-                </h2>
-                <h5 class="m-0 text-light bg-success rounded">
+              <div class="carousel-caption d-block">
+                <h3 class="text-light bg-warning rounded">TU RUTINA EN CASA</h3>
+                <p class="m-0 px-3 text-light bg-success rounded">
                   Creamos una rutina para que puedas realizar con seguridad
                   entrenamientos en casa
-                </h5>
+                </p>
               </div>
             </div>
             <div class="carousel-item">
@@ -115,13 +113,13 @@
                 width="1300"
                 height="850"
               />
-              <div class="carousel-caption d-none d-sm-block">
-                <h2 class="text-light bg-warning rounded">
+              <div class="carousel-caption d-block">
+                <h3 class="text-light bg-warning rounded">
                   PROFESIONALIZACIÓN
-                </h2>
-                <h5 class="m-0 text-light bg-success rounded">
+                </h3>
+                <p class="m-0 px-3 text-light bg-success rounded">
                   Te preparamos para hacer la mejor versión de ti
-                </h5>
+                </p>
               </div>
             </div>
             <div class="carousel-item">
@@ -132,11 +130,11 @@
                 width="1300"
                 height="850"
               />
-              <div class="carousel-caption d-none d-sm-block">
-                <h2 class="text-light bg-warning rounded">NUTRICIÓN</h2>
-                <h5 class="m-0 text-light bg-success rounded">
+              <div class="carousel-caption d-block">
+                <h3 class="text-light bg-warning rounded">NUTRICIÓN</h3>
+                <p class="m-0 px-3 text-light bg-success rounded">
                   Te asesoramos en nutrición
-                </h5>
+                </p>
               </div>
             </div>
             <div class="carousel-item">
@@ -147,11 +145,11 @@
                 width="1300"
                 height="850"
               />
-              <div class="carousel-caption d-none d-sm-block">
-                <h2 class="text-light bg-warning rounded">FISIOTERAPIA</h2>
-                <h5 class="m-0 text-light bg-success rounded">
+              <div class="carousel-caption d-block">
+                <h3 class="text-light bg-warning rounded">FISIOTERAPIA</h3>
+                <p class="m-0 px-3 text-light bg-success rounded">
                   Ponemos a tu disposición a nuestros profesionales
-                </h5>
+                </p>
               </div>
             </div>
           </div>

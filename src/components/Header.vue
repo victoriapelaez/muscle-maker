@@ -42,14 +42,14 @@
             </li>
             <li class="me-xl-2 my-2 my-xl-0">
               <button
-                class="btn btn-outline-success col-3 col-xl-12"
+                class="btn btn-outline-success col-4 col-xl-12"
                 type="button"
               >
                 Login
               </button>
             </li>
             <li class="me-xl-2">
-              <button class="btn btn-warning col-3 col-xl-12" type="button">
+              <button class="btn btn-warning col-4 col-xl-12" type="button">
                 Registrarse
               </button>
             </li>
