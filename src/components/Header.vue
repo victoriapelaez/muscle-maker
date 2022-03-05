@@ -4,7 +4,7 @@
       <div class="container text-center">
         <a
           href="/"
-          class="col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
+          class="text-dark text-decoration-none"
           aria-label="Go to the home page"
         >
           <img
@@ -14,8 +14,11 @@
             height="100"
           />
         </a>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo2">
-          <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarTogglerDemo2"
+        >
+          <ul class="navbar-nav mb-2 mb-xl-0">
             <li class="nav-item pe-xl-5">
               <router-link
                 class="nav-link px-2 link-dark text-uppercase fs-6"
